@@ -7,28 +7,85 @@
     <link rel="stylesheet" href="/frontend/style/output.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body class=" dark:bg-gray-900">
+<body class=" bg-black text-white">  <!--dark:bg-gray-900 -->
     <header>
-        <nav class="bg-black text-white h-20 flex ">
-            <h2 class="font-bold font-sans mt-6 ml-15 text-3xl">APNA CAREERPATH-AI</h2>
-            <div class="flex gap-15 absolute top-6 right-20 text-lg font-bold font-serif pointer-coarse:">
+        <nav class="bg-black text-white  h-25 flex">
+            <div class="bg-[url('/frontend/img/logo.jpg')] bg-contain size-15 rounded-4xl ml-20 mt-4 shadow-lg shadow-blue-600 "></div>
+            <h2 class="font-bold  mt-7 ml-5 text-4xl font-two">APNA CAREERPATH-AI</h2>
+            <div class="flex gap-15 absolute top-7 right-20 text-2xl font-bold font-serif pointer-coarse">
                 <a class="" href="#">Home</a>
                 <a class="" href="#">Help</a>
-                <button class="">Login</button>
+                <button class="mb-8 cursor-pointer" onclick="">Log in</button>
+                <button class="bg-blue-700 p-2 mb-5 rounded-2xl hover:bg-blue-500 cursor-pointer shadow-sm shadow-blue-50" onclick="">Get Started</button>
             </div>
         </nav>
+
         <!-- hero section  -->
         <section>
-            <div class="">
-                <img class="" src="/frontend/img/sectionbg.jpg" alt="hero hero-section-bg">
+            <div class="bg-[url('/frontend/img/sectionbg.jpg')] opacity-40 h-screen bg-no-repeat bg-cover bg-center">
+                <!-- <img class="" src="/frontend/img/sectionbg.jpg" alt="hero hero-section-bg"> -->
+            </div>
+            <pre class="text-white font-one font-extrabold absolute text-8xl top-80 ">
+    |  APNA 
+    | CAREERPATH-AI</pre>
+            <h2 class="absolute left-45 top-130 bg-black p-2 font-two text-4xl">
+                Turn your resume into a career roadmap</h2>
+            <pre class="absolute left-35 top-150  font-three text-2xl">
+        CareerPath AI scans your resume, compares it with real job requirements,
+        and builds a personalized week-by-week learning roadmap to make you job-ready faster.</pre>
+            
+        <button class="absolute left-48 top-170 text-white bg-blue-700 rounded-lg p-2 font-one font-bold text-lg cursor-pointer shadow-sm shadow-blue-50 hover:bg-blue-500" onclick="start()">Analyze My Resume ></button>
+         <span class="absolute left-52 top-183 font-three text-sm">Free • No signup required</span>
+        </section>
+        <hr class="w-400 ml-35 text-blue-300">
+    </header>
+
+    <main class="h-350  dark:bg-gray-900">
+        
+        <!-- problem section  -->
+        <section class="flex justify-center ">
+            <div class="bg-black w-450 h-300 mt-25 rounded-2xl ">
+                <div class="max-w-max max-h-max bg-green-600 font-bold font-one p-2 text-3xl rounded-2xl relative left-200 top-10 ">Problem</div>
             </div>
         </section>
-    </header>
-    <main>
-
     </main>
-    <footer>
 
+    <footer class="flex justify-center">
+        <div class="h-150 w-400  border-black shadow-sm shadow-blue-500 m-20 bg-black">
+            <div class=" relative left-40 top-20 w-120">
+                <div class="bg-[url('/frontend/img/logo.jpg')] bg-contain size-15 rounded-4xl shadow-lg shadow-blue-600 hover:size-17 "></div>
+                <h2 class="font-bold mt-3 text-4xl font-two">APNA CAREERPATH-AI</h2>
+            </div>
+            <div class="w-100 h-max font-light relative top-25 left-40 font-two text-md">
+                Careerpath-ai is an AI-driven guidance platform that turns career, education into real-world skill development. We help learners build, Guide, and showcase Daily-work — with guidance, feedback, and rewards.
+            </div>
+            
+            <div class="relative left-250 bottom-1 w-50 font-three">
+               <h1 class="text-white text-xl mb-2  font-bold mr-1"> Made by <span class="text-white"><i class="fa-solid fa-heart"></i></span> </h1>
+                <h2>Sonali Ahire</h2>
+                <h2>Roshu Dalvi</h2>
+                <h2>Prashant Girge</h2>
+            </div>
+            <div class="relative left-200 bottom-28 grid grid-rows-3 text-md font-one gap-2 w-50">
+                <a href=""><span class="text-2xl hover:text-3xl transition-colors hover:text-red-400"><i class="fa-brands fa-instagram"></span></i> Instagram</a>
+                <a href=""><span class="text-2xl hover:text-3xl transition-colors hover:text-red-400"><i class="fa-brands fa-square-linkedin"></i></span> Linkedin</a>
+                <a href=""><span class="text-2xl hover:text-3xl transition-colors hover:text-red-400"><i class="fa-brands fa-x-twitter"></i></span> X-twitter</a>
+            </div>
+            <div class="w-50 max-h-max relative left-300 bottom-56 ">
+                <h1 class="font-one text-xl mb-1  font-bold mr-1 ">Contact Us</h1>
+                <!-- <h2 class="font-light text-md text-white font-two  opacity-90">Email</h2> -->
+                <a class="font-three " href="#">vickey4t.biz@gmail.com</a>
+                <ul class="mt-2">
+                    <li>+91 9637996827</li>
+                    <li>+91 8128426468</li>
+                </ul>
+            </div>
+
+            <hr class=" ml-35 w-300 border-sm  text-blue-300">
+           <div class="w-100 relative mt-2 font-three text-sm left-250">© 2026 Careerpath-ai. All rights reserved.</div>
+           <div class="w-100 relative bottom-5.5 text-md font-threee left-40">Built with passion. Trusted by learners worldwide</div>
+           
+        </div>
     </footer>
     <script src="/frontend/js/main.js"></script>
 </body>

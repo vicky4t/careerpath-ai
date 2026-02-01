@@ -1,1 +1,3 @@
-console.log("hello ")
+function start(){
+    window.location.href="index.html"
+}
