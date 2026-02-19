@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login-page</title>
+    <link rel="stylesheet" href="/frontend/style/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="ee">
+        <img src="/frontend/img/login-bg.png" alt="login-page-bg" class="bg" >
+        <a href="/frontend/landing.html" class="back-to-home"><i class="fa-solid fa-house"></i> Back To Home</a>
+        <div class="container">
+            <div class="card">
+                <h2>Sign in</h2>
+                <p class="subtitle">Welcome back! please enter your details.</p>
+            </div>
+            <form action="" method="post">
+                <div class="input-group">
+                    <label for="email" >Email</label>
+                    <input type="email" name="email" id="email" placeholder="your@gmail.com" required autocomplate="off">
+                </div>
+                <div class="input-group">
+                    <label for="password" >password</label>
+                    <input type="password" name="password" id="password" placeholder="Enter password">
+                </div>
+                <div class="option">
+                    <label>
+                        <input type="checkbox">Remember me
+                    </label>
+                    <a href="#" >Forgot Password</a>
+                </div>
+                <button>Sign In <i class="fa-solid fa-arrow-right"></i></button>
+            </form>
+            <div class="auth-gg">
+                <div class="google"><a href="#" ><i class="fa-brands fa-google"></i>Google</a></div>
+                <div class="github"><a href="#" ><i class="fa-brands fa-github"></i>Github</a></div>
+            </div>
+
+            <p class="sign-up">Don't Have an Account? <a href="#">Sign Up</a></p>
+        </div>
+    
+    </div>
+    
+    
+    <script src="/frontend/js/login.js"></script>
+</body>
+</html>

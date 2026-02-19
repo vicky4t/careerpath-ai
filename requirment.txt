@@ -1,0 +1,7 @@
+backend/
+  app.py
+  resume_parser.py
+  skill_gap.py
+  roadmap.py
+  score.py
+

@@ -1,0 +1,167 @@
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+body{
+    background:black;
+    
+}
+
+.bg{
+    width: 100vw;
+    height: 900px;
+    opacity: 20%;
+    z-index: 0;
+}
+
+
+body,html{
+    font-family:"poppons",sans-serif;
+    height:100%;
+}
+
+.back-to-home{
+    height: auto;
+    width: auto;
+    background-color: #000000;
+    color: white;
+    position: absolute;
+    font-size: 20px;
+    top: 50px;
+    left: 50px;
+    padding: 10px;
+    border: 1px solid rgb(80, 70, 70);
+    border-radius: 10px;
+    z-index: 60;
+}
+
+a{
+    color: #6266f1;
+    text-decoration: none;
+}
+
+.container{
+    height: 600px;
+    width: 100%;
+    width: 500px;
+    padding: 20px;
+    background:rgb(21, 19, 19);
+    border-radius:12px;
+    box-shadow: 1px 1px 1px rgb(84, 80, 80);
+    position: absolute;
+    top: 10em;
+    left: 45em;
+    z-index: 59;
+   
+}
+
+.card{
+    background: rgb(0, 0, 0);
+    color: white;
+    padding: 40px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgb(0,0,0,0.05);
+    transition: all 0.3s ease-in-out;
+}
+
+.card:hover{
+    margin-top: 10px;
+    color:rgb(203, 195, 195);
+}
+
+.card .subtitle{
+    font-size:14px;
+    color: #a2b1b3;
+    margin-top: 5px;
+    margin-bottom: 25px;
+
+}
+
+/* form */
+.input-group{
+    margin-bottom: 20px;
+
+}
+
+.input-group label{
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500; 
+    color: #9ea2aa;
+
+}
+
+.input-group input{
+    width: 100%;
+    background-color: black;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.input-group input:focus{
+    border-color:#6366f1;
+    outline: none;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.option{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    color:#bdc1ca;
+}
+
+button{
+    width: 100%;
+    padding: 12px; 
+    background: #6366f1;
+    color:white;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover{
+    background:#4f46e5;
+}
+
+.auth-gg{
+    color: white;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 20px;
+}
+
+.google ,.github{
+    padding: 10px 50px 10px 50px;
+    border-radius: 20px;
+    background-color: #0b0a0a;
+    
+    border: 1px solid rgb(42, 36, 36);
+}
+
+.google >a,.github > a{
+    color: white;
+}
+
+.sign-up{
+    margin-top: 25px;
+    font-size: 14px;
+    text-align: center;
+    color: #6b7280;
+}
+
+.sign-up a{
+    font-weight: 600;
+}
