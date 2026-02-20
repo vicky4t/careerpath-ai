@@ -5,3 +5,4 @@ backend/
   roadmap.py
   score.py
 
+npx @tailwindcss/cli -i frontend/style/input.css -o frontend/style/output.css --watch
