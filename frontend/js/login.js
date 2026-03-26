@@ -1,3 +1,3 @@
 function login(){
-    window.location.href="/frontend/login.html"
+    window.location.href="/auth/signin.html"
 }
