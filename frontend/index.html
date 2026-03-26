@@ -1,19 +1,114 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CAREERPATH-AI</title>
+    <title>CAREERPATH-AI - Find Your Dream Career</title>
+    <link rel="stylesheet" href="/frontend/style/main.css">
     <link rel="stylesheet" href="/frontend/style/output.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body class="bg-black">
-    <div class=""></div>
-    <header>
-        <h1 class="text-5xl text-white">heyyy</h1>
+<body class="bg-[#070709] text-gray-200 font-sans antialiased overflow-x-hidden selection:bg-blue-500/30 flex flex-col min-h-screen">
+
+    <!-- Navbar -->
+    <header class="fixed top-0 w-full z-50 backdrop-blur-xl bg-[#070709]/70 border-b border-white/5">
+        <nav class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <!-- Logo area -->
+            <a href="/frontend/landing.html" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-600 to-purple-600 shadow-lg shadow-blue-500/20 flex items-center justify-center p-[2px]">
+                    <div class="w-full h-full bg-[#070709] rounded-lg bg-[url('/frontend/img/logo.jpg')] bg-cover bg-center"></div>
+                </div>
+                <h2 class="font-bold text-xl tracking-wide text-white group-hover:text-blue-400 transition-colors">CareerPath<span class="text-blue-500"> AI</span></h2>
+            </a>
+
+            <!-- Nav Links -->
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+                <a href="/frontend/landing.html" class="text-gray-300 hover:text-white transition-colors">Home</a>
+                <a href="/auth/signup.html" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-white transition-colors">Sign-up</a>
+            </div>
+
+            <!-- Actions (Mobile & Desktop) -->
+            <div class="flex items-center gap-4">
+                <a href="/frontend/landing.html" class="hidden md:block px-5 py-2 rounded-full text-sm font-medium hover:bg-white/5 transition-colors cursor-pointer text-gray-300 hover:text-white border border-transparent hover:border-white/10">Explore</a>
+                <a href="/auth/signup.html" target="_blank" rel="noopener noreferrer" class="px-6 py-2.5 rounded-full text-sm font-medium bg-gradient-to-r from-blue-600 to-indigo-600 text-white hover:shadow-lg hover:shadow-blue-500/25 transform hover:-translate-y-0.5 transition-all shadow-md shadow-blue-500/20">Sign Up Now</a>
+            </div>
+        </nav>
     </header>
-    <main></main>
-    <footer></footer>
+
+    <!-- Main Content -->
+    <main class="flex-grow flex items-center justify-center relative pt-20">
+        <!-- Abstract Background Effects -->
+        <div class="absolute inset-0 bg-[url('/frontend/img/feature-bg3.png')] bg-cover bg-center opacity-[0.03] mix-blend-screen pointer-events-none"></div>
+        <div class="absolute top-[20%] left-[10%] w-[500px] h-[500px] bg-blue-600/20 rounded-full blur-[120px] pointer-events-none -z-10"></div>
+        <div class="absolute bottom-[20%] right-[10%] w-[600px] h-[400px] bg-purple-600/10 rounded-full blur-[100px] pointer-events-none -z-10"></div>
+
+        <section class="max-w-5xl mx-auto px-6 py-24 md:py-32 relative z-10 text-center flex flex-col items-center">
+            
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-500/10 border border-blue-500/20 text-sm font-medium text-blue-400 mb-8 backdrop-blur-sm shadow-[0_0_20px_rgba(59,130,246,0.1)]">
+                <i class="fa-solid fa-sparkles text-blue-400"></i> AI-Powered Recommendations
+            </div>
+
+            <h1 class="text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tight text-white mb-8 leading-tight max-w-4xl">
+                Find Your <br class="hidden md:block">
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-indigo-400 to-purple-400 drop-shadow-[0_0_15px_rgba(99,102,241,0.3)]">Dream Career</span>
+            </h1>
+
+            <p class="text-xl md:text-2xl text-gray-400 mb-12 max-w-2xl font-light leading-relaxed">
+                Get Personalized Career Recommendations Powered by Artificial Intelligence. Discover the perfect path tailored to your unique skills and aspirations.
+            </p>
+
+            <button type="button" class="group relative px-8 py-5 rounded-full text-lg font-bold text-white bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 transition-all shadow-xl shadow-blue-600/30 hover:shadow-blue-500/50 hover:scale-105 active:scale-95 flex items-center gap-3 overflow-hidden cursor-pointer" onclick="window.location.href='/frontend/landing.html'">
+                <div class="absolute inset-0 bg-white/20 -translate-x-full group-hover:animate-[shimmer_1.5s_infinite]"></div>
+                <span>Find Your Career</span> 
+                <i class="fa-solid fa-rocket group-hover:-translate-y-1 group-hover:translate-x-1 transition-transform duration-300"></i>
+            </button>
+
+            <!-- Floating feature indicators -->
+            <div class="mt-20 grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 text-center text-sm md:text-base font-medium text-gray-400 opacity-80">
+                <div class="flex flex-col items-center gap-2">
+                    <div class="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-blue-400 mb-2"><i class="fa-solid fa-bullseye"></i></div>
+                    Accuracy
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                    <div class="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-purple-400 mb-2"><i class="fa-solid fa-bolt"></i></div>
+                    Speed
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                    <div class="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-green-400 mb-2"><i class="fa-solid fa-chart-line"></i></div>
+                    Data Driven
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                    <div class="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-pink-400 mb-2"><i class="fa-solid fa-shield-halved"></i></div>
+                    Personalized
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="mt-auto border-t border-white/5 bg-[#040406]">
+        <div class="max-w-7xl mx-auto px-6 py-12 flex flex-col md:flex-row items-center justify-between gap-8">
+            <div class="text-center md:text-left">
+                <h3 class="text-xl font-bold text-white mb-2 tracking-wide">About CareerPath<span class="text-blue-500"> AI</span></h3>
+                <p class="text-gray-400 text-sm max-w-sm">Careerpath-AI helps students and professionals choose the right career path using artificial intelligence.</p>
+            </div>
+            
+            <div class="text-gray-500 text-sm font-medium">
+                © 2026 Careerpath-AI. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom Animation for button shimmer -->
+    <style>
+        @keyframes shimmer {
+            100% {
+                transform: translateX(100%);
+            }
+        }
+    </style>
+
     <script src="/frontend/scripts/main.js"></script>
 </body>
 </html>
